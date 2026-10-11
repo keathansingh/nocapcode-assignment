@@ -1,0 +1,25 @@
+:root {
+  --forest-900: #062f20;
+  --forest-800: #0d3d2d;
+  --forest-700: #173f32;
+  --forest-600: #315a3e;
+  --emerald-500: #007a4d;
+  --emerald-600: #0b8a5b;
+  --gold-400: #ffd447;
+  --gold-500: #e9c952;
+  --ivory-100: #f5f5eb;
+  --ivory-200: #ecece2;
+  --ink-900: #050706;
+  --navy-900: #03213f;
+  --sage-500: #a5aea1;
+  --border-soft: rgba(255, 255, 255, 0.18);
+  --shadow-soft: 0 28px 64px rgba(3, 8, 5, 0.14);
+  --shadow-card: 0 16px 28px rgba(0, 0, 0, 0.12);
+  --radius-lg: 28px;
+  --radius-md: 22px;
+  --radius-sm: 16px;
+  --container: min(1260px, calc(100% - clamp(48px, 13vw, 188px)));
+  --transition: 180ms ease;
+  --serif: Georgia, 'Times New Roman', serif;
+  --sans: 'Segoe UI', Inter, 'Helvetica Neue', Arial, sans-serif;
+}
