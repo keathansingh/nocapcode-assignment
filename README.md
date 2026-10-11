@@ -6,7 +6,7 @@ The project was built as part of the NoCapCode Full Stack Developer Internship a
 
 ## Live Demo
 
-Add your deployed website link here.
+https://nocapcode-assignment.vercel.app/
 
 ## Tech Stack
 
