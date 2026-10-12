@@ -126,36 +126,6 @@
   color: #00a767;
 }
 
-.hero-attributes button {
-  padding: 0;
-  border: 0;
-  color: inherit;
-  background: transparent;
-  font: inherit;
-  letter-spacing: inherit;
-  text-transform: inherit;
-  cursor: pointer;
-}
-
-.hero-attributes button:focus-visible {
-  outline: 2px solid var(--gold-400);
-  outline-offset: 4px;
-}
-
-.hero-attribute-explanation {
-  max-width: min(34rem, 100%);
-  margin: 0.9rem auto 0;
-  color: rgba(245, 245, 235, 0.68);
-  font-size: 0.86rem;
-  text-align: center;
-  animation: hero-attribute-fade-in 220ms ease both;
-}
-
-@keyframes hero-attribute-fade-in {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
 .scroll-link {
   display: inline-flex;
   align-items: center;
@@ -1306,67 +1276,6 @@
 .outcome-contact:hover {
   color: var(--forest-900);
   background: var(--gold-400);
-}
-
-.outcome-actions {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 0.8rem;
-  margin-top: 1.7rem;
-}
-
-.outcome-actions .outcome-contact {
-  margin-top: 0;
-}
-
-.outcome-social-links {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.55rem;
-}
-
-.outcome-social-icon {
-  display: grid;
-  width: 2.25rem;
-  height: 2.25rem;
-  place-items: center;
-  border: 1px solid transparent;
-  border-radius: 50%;
-  color: var(--ivory-100);
-  background: transparent;
-  cursor: pointer;
-  transition: border-color 220ms ease, color 220ms ease, background-color 220ms ease;
-}
-
-.outcome-social-icon svg {
-  width: 1.1rem;
-  height: 1.1rem;
-  fill: currentColor;
-}
-
-.outcome-social-icon:hover {
-  border-color: var(--gold-400);
-  color: var(--gold-400);
-}
-
-.outcome-social-icon:focus-visible {
-  border-color: var(--gold-400);
-  outline: none;
-  color: var(--gold-400);
-}
-
-@media (max-width: 600px) {
-  .outcome-social-icon {
-    width: 2.75rem;
-    height: 2.75rem;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .outcome-social-icon {
-    transition-duration: 0.01ms;
-  }
 }
 
 .chat-widget {
