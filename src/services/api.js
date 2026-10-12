@@ -21,7 +21,7 @@ export async function submitContact(payload) {
     throw error;
   }
 
-  if (body?.status !== 'saved' || !Number.isInteger(body.id)) {
+  if (body?.status !== 'saved' || !Number.isSafeInteger(body.id) || body.id < 1) {
     throw new Error('The contact service did not confirm that your message was saved.');
   }
 

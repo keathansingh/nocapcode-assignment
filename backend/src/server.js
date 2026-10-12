@@ -16,10 +16,15 @@ const server = app.listen(port, () => {
   console.info(`PPSTU API listening on port ${port}`);
 });
 
-function shutdown() {
-  server.close(() => {
-    close();
-    process.exit(0);
+async function shutdown() {
+  server.close(async () => {
+    try {
+      await close();
+      process.exit(0);
+    } catch (error) {
+      console.error('API shutdown failed', error?.code ?? 'DATABASE_ERROR');
+      process.exit(1);
+    }
   });
 }
 
